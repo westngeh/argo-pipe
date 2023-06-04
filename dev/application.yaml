@@ -40,7 +40,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/westngeh/argo-play.git
+    repoURL: https://github.com/westngeh/argo-pipe.git
     targetRevision: HEAD
     path: dev
   destination: 
