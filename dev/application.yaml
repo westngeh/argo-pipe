@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: hello
-        image: mylandmarktech/hello
+        image: mylandmarktech/hello:1
         ports:
         - containerPort: 80
 ---
@@ -23,7 +23,7 @@ kind: Service
 metadata:
   name: hello-service
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: hello
   ports:
